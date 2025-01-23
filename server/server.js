@@ -10,7 +10,7 @@ const port = process.env.PORT || 4001;
 app.use(cors());
 
 app.get('/', (req, res)=>{
-    res.send("Wlecome to the Chatbox");
+    res.send("Server is working");
 })
 
 const server = http.createServer(app);
