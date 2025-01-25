@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Join from './component/Join/Join'; // Make sure to import your components
 import Chat from './component/Chat/Chat'; // Make sure to import your components
+import './App.css';
 
 function App() {
   return (

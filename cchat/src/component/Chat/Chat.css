@@ -16,10 +16,24 @@
 .header{
     background-color: crimson;
     height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.header > h1{
+    color: white;
+    margin: 2.5vmax;
+}
+.header img{
+    margin: 2.5vmax;
+    transition: all 0.3s;  
+    cursor: pointer; 
+}
+.header img:hover{
+    transform: scale(1.7);
+}
 .chatBox{
-    border: 0.2vmax solid black;
     height: 70%;
     box-sizing: border-box;
 }
@@ -38,6 +52,7 @@
     background-color: white;
     font-family: "Roboto";
     font-size: 1.2vmax;
+    border-top: 0.2vmax solid black;
 }
 
 .sendBtn{
