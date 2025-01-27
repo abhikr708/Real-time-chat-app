@@ -9,7 +9,8 @@ import closeIcon from "../../images/closeIcon.png"
 
 let socket
 
-const ENDPOINT = "http://localhost:4000/";
+const ENDPOINT = "https://chatter-backend-qfcx.onrender.com/";
+// const ENDPOINT = "http://localhost:4000/";
 
 const Chat = () =>{
     const [id, setId] = useState("");
@@ -53,7 +54,6 @@ const Chat = () =>{
         }
     }, [])
 
-    // _____________something is wrong here, user name is undefined___________
     useEffect(()=>{
         socket.on('sendMessage', (data)=>{
             // console.log(`user: ${data.user}, message: ${data.message}`);
